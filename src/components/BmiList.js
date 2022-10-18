@@ -1,53 +1,54 @@
-function BmiList({range}) {
+function BmiList({ range }) {
+  console.log(range);
   return (
-    <div className="border rounded-lg p-2 shadow-xl border-green-700">
-      <div  className = "p-2 border border-green-700">
+    <div className="p-4">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-10 text-xl font-bold text-green-600">
           <li>Body Type</li>
           <li>Body Mass Index</li>
           <li>Weight Range</li>
         </ul>
       </div>
-      <div className = "p-2 border border-green-700">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-20">
           <li>Underweight</li>
           <li>less than 18.5</li>
-          <li> {range.underWeight.low}</li>
+          <li>&lt; {range.underWeight.low} Kg</li>
         </ul>
       </div>
-      <div className = "p-2 border border-green-700">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-24">
           <li>Normal</li>
           <li> 18.5 - 24.9</li>
-          <li> </li>
+          <li>{range.normal.low} - {range.normal.high} </li>
         </ul>
       </div>
-      <div className = "p-2 border border-green-700">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-24">
           <li>Overweight</li>
           <li> 25 - 29.9</li>
-          <li> </li>
+          <li>{range.overWeight.low} - {range.overWeight.high} </li>
         </ul>
       </div>
-      <div className = "p-2 border border-green-700">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-20">
           <li>Obesity Class I</li>
           <li> 30 - 34.9</li>
-          <li> </li>
+          <li>{range.obesityOne.low} - {range.obesityOne.high} </li>
         </ul>
       </div>
-      <div className = "p-2 border border-green-700">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-20">
           <li>Obesity Class II</li>
           <li> 35 - 39.9</li>
-          <li> </li>
+          <li>{range.obesityTwo.low} - {range.obesityTwo.high} </li>
         </ul>
       </div>
-      <div className = "p-2 border border-green-700">
+      <div className="p-2 border border-green-700">
         <ul className="flex gap-16">
           <li>Obesity Class III</li>
           <li> greater than 40</li>
-          <li> </li>
+          <li> &gt; {range.obesityThree.high}</li>
         </ul>
       </div>
 

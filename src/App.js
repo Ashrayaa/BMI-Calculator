@@ -26,15 +26,15 @@ function App() {
     setBmiType(bType);
 
     
-    const range = {
-      underWeight: { low: calWeight(18.5) },
+    const range = { //range is an object 
+      underWeight: { low: calWeight(18.5, h) },
       normal: { low: calWeight(18.5, h), high: calWeight(24.9, h) },
       overWeight: { low: calWeight(25, h), high: calWeight(29.9, h) },
       obesityOne: { low: calWeight(30, h), high: calWeight(34.9, h) },
       obesityTwo: { low: calWeight(35, h), high: calWeight(39.9, h) },
       obesityThree: { high: calWeight(40, h) },
     };
-    setBmiRange(range);
+    setBmiRange(range); //object "range" is passed to the state "setBmiRange"
 
   };
 
