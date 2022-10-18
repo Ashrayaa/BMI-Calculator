@@ -20,7 +20,7 @@ function Bmiscore({bmiNo, bmiName, changeWeight}) {
         <div className="">"You need to gain <span className="font-bold text-green-600">{changeWeight.weight} Kg</span>" </div>
       )}
       {changeWeight.type === "normal" && (
-        <div className="">"You weight is <span className="font-bold text-green-600">Normal</span>. Maintain it" </div>
+        <div className="">"You weight is <span className="font-bold text-green-600">Normal</span>. Good For You" </div>
       )}
     </div>
     // <div>
